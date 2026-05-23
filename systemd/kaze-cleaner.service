@@ -1,0 +1,12 @@
+[Unit]
+Description=Kaze - Limpeza inteligente de sistema
+
+[Service]
+Type=oneshot
+ExecStart=%h/kaze/target/release/kaze clean
+# Executa com ionice (prioridade ociosa) em todo o serviço
+IOSchedulingClass=idle
+# Timeout para garantir que não atrase desligamento
+TimeoutStopSec=30
+# Se falhar, não derruba a sessão do usuário
+Restart=no

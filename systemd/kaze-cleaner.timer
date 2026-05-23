@@ -1,0 +1,15 @@
+[Unit]
+Description=Dispara Kaze periodicamente
+
+[Timer]
+# 30 minutos após o boot
+OnBootSec=30min
+# A cada 30 minutos
+OnUnitActiveSec=30min
+# Evita disparos simultâneos se o sistema ficou suspenso
+Persistent=true
+# Pequena randomização para evitar picos
+RandomizedDelaySec=300
+
+[Install]
+WantedBy=timers.target
