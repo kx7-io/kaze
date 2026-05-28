@@ -1,0 +1,20 @@
+{
+  "name": "kaze-tui",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@types/blessed": "^0.1.27",
+    "@types/node": "^25.9.1",
+    "blessed": "^0.1.81",
+    "tsx": "^4.22.3",
+    "typescript": "^6.0.3"
+  }
+}
